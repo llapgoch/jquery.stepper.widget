@@ -13,7 +13,7 @@
             disabledClass:'disabled',
 
             maxQty: 999,
-            minQty: -1,
+            minQty: 1,
             step: 1
         },
 
