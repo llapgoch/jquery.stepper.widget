@@ -17,7 +17,7 @@ jQuery('.stepper-widget').stepper();
 * `disabledClass` **default: true** The disabled class to apply to the elements when disable() is called on the widget
 * `minQty` **default: true** The minimum quantity the widget will count to
 * `maxQty` **default: 999** The maximum quantity the widget will count to
-* `step` **default: 1** The incrememt / decrememnt step value
+* `step` **default: 1** The increment / decrememnt step value
 
 
 
