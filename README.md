@@ -12,8 +12,8 @@ jQuery('.stepper-widget').stepper();
 
 * `identifier` **default: stepper** Used as the event namespace identifier and the element's data attribute name
 * `upSelector` **default: '.js-qty-up'** The selector used for the up button
-* `downSelector` *default: '.js-qty-down'* The selector used for the down button
-* `inputSelector` **default: 'js-melodeon-hide'** The selector used for the input field
+* `downSelector` **default: '.js-qty-down'** The selector used for the down button
+* `inputSelector` **default: '.js-qty-input'** The selector used for the input field
 * `disabledClass` **default: true** The disabled class to apply to the elements when disable() is called on the widget
 * `minQty` **default: true** The minimum quantity the widget will count to
 * `maxQty` **default: 999** The maximum quantity the widget will count to
