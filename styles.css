@@ -1,0 +1,123 @@
+
+
+/* To pretify things */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    margin: .25em 0;
+}
+
+a {
+    width: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    color: #222;
+    padding: 1em 1.5em;
+    border-radius: 0.15em;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+    text-decoration: none;
+    position: relative;
+}
+a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+li.has-child:not(.is-active):not(.has-active-child) > a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: .5em;
+    width: .5em;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 50%;
+    right: 1.5em;
+    margin-top: -0.5em;
+}
+
+li.has-active-child > a {
+    color: #fff;
+}
+li.has-active-child > a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: .5em;
+    width: .5em;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 50%;
+    right: 1.5em;
+    margin-top: -0.15em;
+}
+
+li li.is-active > a {
+    color: #fff;
+}
+li li.is-active > a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: .8em;
+    width: .34em;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 50%;
+    right: 1.5em;
+    margin-top: -0.6em;
+}
+
+.has-active-child > a {
+    color: #fff;
+    background-color: rgba(0, 128, 0, 0.5);
+}
+.has-active-child > a:hover {
+    background-color: rgba(0, 128, 0, 0.7);
+}
+
+.is-active > a {
+    color: #fff;
+    background-color: green;
+    cursor: default;
+}
+
+/* serious fluff */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: .9em;
+}
+
+* {
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+code {
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 3em;
+}
+
+body {
+    width: 90%;
+    max-width: 30em;
+    margin: 5vh auto;
+    color: #333;
+}

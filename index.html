@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+
+        <script>
+            jQuery.noConflict();
+        </script>
+
+        <script src="stepper.widget.js"></script>
+
+        <script>
+            jQuery(document).on('ready', function(){
+                jQuery('.stepper-widget').stepper();
+
+                jQuery('.stepper-widget').on('stepperupdate', function(ev, data){
+                    console.log(data.updateMode);
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="stepper-widget">
+            <input type="text" class="js-qty-input" value="1" />
+            <button type="button" class="js-qty-down">-</button>
+            <button type="button" class="js-qty-up">+</button>
+        </div>
+
+        <div class="stepper-widget" id="callbackTester">
+            <input type="text" class="js-qty-input"  value="1" />
+            <button type="button" class="js-qty-down">-</button>
+            <button type="button" class="js-qty-up">+</button>
+        </div>
+
+        <div class="stepper-widget">
+            <input type="text" class="js-qty-input" value="1" />
+            <button type="button" class="js-qty-down">-</button>
+            <button type="button" class="js-qty-up">+</button>
+        </div>
+
+        <div class="stepper-widget">
+            <input type="text" class="js-qty-input" value="1" />
+            <button type="button" class="js-qty-down">-</button>
+            <button type="button" class="js-qty-up">+</button>
+        </div>
+    </body>
+</html>
