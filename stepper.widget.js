@@ -90,15 +90,15 @@
         },
 
         _fireUpdate: function(ev){
-            var updateMode = CHANGE_TYPE_SAME;
+            var updateType = CHANGE_TYPE_SAME;
 
             if(this.value != this.originalValue){
-                updateMode = CHANGE_TYPE_DIFFERENT;
+                updateType = CHANGE_TYPE_DIFFERENT;
             }
 
             this._fireEvent('update', ev, {
                 'value': this.value,
-                'updateMode': updateMode
+                'updateType': updateType
             });
         },
 
