@@ -32,13 +32,15 @@
             this.value = val;
         },
 
-        _disable: function(){
+        disable: function(){
+            this._super();
             this._getInput().prop('disabled', 'disabled').addClass(this.options.disabledClass);
             this._getDownElement().addClass(this.options.disabledClass);
             this._getUpElement().addClass(this.options.disabledClass)
         },
 
-        _enable: function(){
+        enable: function(){
+            this._super();
             this._getInput().removeProp('disabled').addClass(this.options.disabledClass);
             this._getDownElement().removeClass(this.options.disabledClass);
             this._getUpElement().removeClass(this.options.disabledClass);
